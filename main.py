@@ -94,8 +94,10 @@ while True:
     #print(people_entering)
     people_in = (len(entering))
     people_out = (len(exiting))
-    cv2.putText(frame,str(people_in),(60,80),cv2.FONT_HERSHEY_COMPLEX,(0.7),(0,0,255),2)
-    cv2.putText(frame,str(people_out),(60,140),cv2.FONT_HERSHEY_COMPLEX,(0.7),(255,0,255),2)
+    cv2.putText(frame,"Descendo: ",(0,80),cv2.FONT_HERSHEY_COMPLEX,(0.7),(0,0,255),2)
+    cv2.putText(frame,str(people_in),(150,80),cv2.FONT_HERSHEY_COMPLEX,(0.7),(0,0,255),2)
+    cv2.putText(frame,str(people_out),(150,140),cv2.FONT_HERSHEY_COMPLEX,(0.7),(255,0,255),2)
+    cv2.putText(frame,"Subindo: ",(0,140),cv2.FONT_HERSHEY_COMPLEX,(0.7),(255,0,255),2)
     cv2.imshow("RGB", frame)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
