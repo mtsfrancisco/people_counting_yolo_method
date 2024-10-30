@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../cam_detector/media"
+		},
+		{
+			"path": "../cam_detector/yolo_models"
+		}
+	],
+	"settings": {}
+}

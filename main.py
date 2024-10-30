@@ -8,13 +8,11 @@ from video_stream import VideoStream
 # Carregar o modelo YOLO
 model = YOLO('/Users/mtsfrancisco/Documents/cam_detector/yolo_models/yolov8m.pt')
 
-
 def rgb_event(event, x, y, flags, param):
     """Função de callback para capturar a posição do mouse e imprimir as coordenadas RGB."""
     if event == cv2.EVENT_MOUSEMOVE:
         colors_bgr = [x, y]
         print(colors_bgr)
-
 
 # Configuração da janela para exibir o vídeo e registrar os eventos do mouse
 cv2.namedWindow('RGB')
